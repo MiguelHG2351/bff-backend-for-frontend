@@ -14,12 +14,12 @@ class UI {
       div.classList.add('card')
       div.innerHTML = `
             <div class="card-image">
-                <img src="${data.imagePath}" alt="">
+                <img src="http://localhost:3000/${data.imagePath}" alt="">
             </div>
             <div class="description-card">
                 <h4>${data.title}</h4>
                 <p>${data.author}</p>
-                <a class="btn-delete" _id="${data._id}">Delete</a>
+                <a class="btn btn-delete" _id="${data._id}">Delete</a>
             </div>
             <div className="footer-card">
                 <p>${format(data.created_at)}</p>

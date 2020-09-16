@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <section class="sidenav">
+        <section class="sidenav" id="sidenav">
             <header class="header-sidenav">
                 <h2>Libros del Sitio</h2>
             </header>
@@ -16,20 +16,22 @@
                 <input type="text" placeholder="Ingresa el nombre del libro" name="title"/>
                 <input type="text" placeholder="Cual es el nombre del autor" name="author"/>
                 <input type="text" placeholder="El isbn" name="isbn"/>
-                <input type="file" name="image" id="image"/>
-                <button>Enviar</button>
+                <input type="file" class="upload-file" name="image" id="image"/>
+                <button class="btn btn-primary">Enviar</button>
             </form>
         </section>
         <section class="container">
             <div class="container-section">
                 <header class="header-container-section">
+                    <button class="btn" id="toggle-menu"><i class="fas fa-align-right"></i></button>
                     <h2>Libros</h2>
                 </header>
                 <div class="container-card" id="container-card">
                 </div>
-                </div>
             </div>
         </section>
     </main>
+    <div class="overlay" id="overlay"></div>
+    <script src="https://kit.fontawesome.com/cd830bd1aa.js" crossorigin="anonymous"></script>
 </body>
 </html>
