@@ -14,7 +14,7 @@ class UI {
       div.classList.add('card')
       div.innerHTML = `
             <div class="card-image">
-                <img src="http://localhost:3000/${data.imagePath}" alt="">
+                <img src="/${data.imagePath}" alt="">
             </div>
             <div class="description-card">
                 <h4>${data.title}</h4>
